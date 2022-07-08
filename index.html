@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/script.js" defer></script>
+  <title>Converter</title>
+</head>
+<!-- https://apilayer.com/marketplace/exchangerates_data-api?preview=true#documentation-tab -->
+
+<body>
+  <div class="wrapper">
+    <form action="#" id="form">
+      <div class="block" id="block-main">
+        <select name="select" id="select">
+          <option value="">Выберете вылюту</option>
+          <option value="EUR">EUR</option>
+          <option value="USD">USD</option>
+        </select>
+      </div>
+      <div class="block" id="block-one">
+        <div class="block-input">
+          <label for="VAL" class="label">
+            <input type="text" name="VAL" id="val">
+            <div class="text-val"></div>
+          </label>
+          <label for="RUB" class="label">
+            <input type="text" name="RUB" id="rub-total">
+            <div class="text-rub">Российски рубль (RUB)</div>
+          </label>
+        </div>
+        <button id="btn-one" class="btn">Конвертировать</button>
+      </div>
+      <div class="block" id="block-one">
+        <div class="block-input">
+          <label for="RUB" class="label">
+            <input type="text" name="RUB" id="rub">
+            <div class="text-rub">Российски рубль (RUB)</div>
+          </label>
+          <label for="VAL" class="label">
+            <input type="text" name="VAL" id="val-total">
+            <div class="text-val"></div>
+          </label>
+        </div>
+        <button id="btn-two" class="btn">Конвертировать</button>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>
